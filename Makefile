@@ -1,4 +1,4 @@
-all: full-CV.pdf resume.md resume.rst
+all: full-CV.pdf resume.md resume.rst index.html
 
 full-CV.pdf: full-CV.tex
 	pdflatex full-CV.tex
@@ -10,5 +10,7 @@ resume.md: full-CV.tex
 resume.rst: full-CV.tex
 	pandoc full-CV.tex -o resume.rst
 
+index.html: full-CV.tex
+	pandoc full-CV.tex -o index.html
 clean:
 	rm -f *.aux *.dvi full-CV.pdf full-CV-camille-scott.pdf
