@@ -238,9 +238,9 @@
 \def\@linename{\begingroup
   \def\\{, }
   {\namefont\@name}
-  \vskip 2pt
+  \vskip 5pt
   \fullline
-  \vskip 2pt
+  \vskip 5pt
   % where do you live?
   \@ifundefined{@addressone}{%
     % do nothing
