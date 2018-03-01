@@ -1,6 +1,6 @@
 all: full-CV.pdf resume.md resume.rst index.html
 
-full-CV.pdf: full-CV.tex
+full-CV.pdf: full-CV.tex camille_resume.cls
 	pdflatex full-CV.tex
 	cp full-CV.pdf full-CV-camille-scott.pdf
 
