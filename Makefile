@@ -1,14 +1,7 @@
-all: full-CV.pdf resume.md resume.rst index.html
+all: public-CV.pdf index.html
 
-full-CV.pdf: full-CV.tex camille_resume.cls
-	pdflatex full-CV.tex
-	cp full-CV.pdf full-CV-camille-scott.pdf
-
-resume.md: full-CV.tex
-	pandoc full-CV.tex -o resume.md
-
-resume.rst: full-CV.tex
-	pandoc full-CV.tex -o resume.rst
+public-CV.pdf: public-CV.tex camille_resume.cls
+	pdflatex public-CV.tex
 
 clean:
-	rm -f *.aux *.dvi full-CV.pdf full-CV-camille-scott.pdf
+	rm -f *.aux *.dvi *.log public-CV.pdf
