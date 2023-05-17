@@ -7,7 +7,7 @@
 
 
 %________________________________________________________________________________________
-\documentclass[margin,12pt]{camille_resume}
+\documentclass[resmargin,12pt]{camille_resume}
 
 \usepackage{hyperref}
 \usepackage{color}
@@ -20,9 +20,10 @@ By Request\\
 Davis, CA}
 \address{
 \hfill {\bf Contact}\\
-\hfill camille.scott.w@gmail.com\\
-\hfill cswel@ucdavis.edu}
-\pagenumbering{arabic}
+\hfill cswel@ucdavis.edu\\
+\hfill camille.scott.w@gmail.com
+}
+\pagenumbering{gobble}
 \pagestyle{plain}
 
     
@@ -31,13 +32,15 @@ Davis, CA}
 
     %____________________________________________________________________________________
 
-\section{\small \it{(as of May 2022)}}
+\section{\small \it{(as of May 2023)}}
 
-    % Education
-    \section{\mysidestyle Education}
+% Education
+\section{\mysidestyle Education}
 
-{\bf Alma College}, Alma, MI \hfill 2008-2012\\
-{\em B.S., Computer Science}
+{\bf University of California Davis}, Davis, CA \hfill 2015-2022\\
+{\em PhD., Computer Science, Lab for Data Intensive Biology}\\
+{\em Dissertation: \href{https://github.com/camillescott/dissertation}{Streaming Methods for
+    Assembly Graph Analysis}}
 
 \vspace{1mm}
 
@@ -46,24 +49,70 @@ Davis, CA}
 
 \vspace{1mm}
 
-{\bf University of California Davis}, Davis, CA \hfill 2015-2022\\
-{\em PhD., Computer Science, Lab for Data Intensive Biology}\\
-{\em Dissertation: \href{https://github.com/camillescott/dissertation}{Streaming Methods for
-    Assembly Graph Analysis}}
+{\bf Alma College}, Alma, MI \hfill 2008-2012\\
+{\em B.S., Computer Science}
 
 \vspace{2mm}
 
-    %____________________________________________________________________________________
-    % Honours and Awards
-    \section{\mysidestyle Honors and\\Awards} 
+\section{\mysidestyle Work}
 
-National Merit Finalist \hfill 2008\\
-Alma College / Distinguished Scholar Award \hfill 2008-2012\\
-Binghamton University / Research Experience for Undergrads \hfill 2011\\
-USDA / MSU /  National Needs Fellow \hfill 2013-2015\\
+\begin{list1}
 
-    %____________________________________________________________________________________
-    % Publications
+\item[] Systems Administrator at {\bf UC Davis HPCCF} \hfill 7/2022-present\\\\
+\begin{workdesc}
+Provide scientific computing support to the College of Biological Sciences for the High Performance Computing Core Facility.
+Co-lead design and deployment of the Franklin cluster consisting of 11 compute and GPU nodes with 2PB of attached network storage:
+designed and maintain reproducible software stack for genomics and cryo-EM workflows using Spack and Conda; design and maintenance of
+core software and libraries for scheduling and infrastructure; co-designed and implemented complete refactoring of Puppet configuration
+codebase for automated configuration management; communicate and implement stakeholder and user needs; collaborate with researchers on deployment,
+optimization, and use of their scientific software in the HPC environment; deploy and maintain user documentation and tutorials.
+\end{workdesc}
+
+\item[] Genomic Data Specialist at {\bf APHL} \hfill 5/2021-8/2022\\\\
+\begin{workdesc}
+Processed SARS-CoV-2 genomes through contract work mediated by the Association of Public Health Labs in the COVID-19 pandemic effort. 
+Quality controlled genome assemblies, managed genome metadata, wrote processing workflows, and submitted genomes to GISAID for public archiving.
+\end{workdesc}
+
+\item[] Teaching Assistant at {\bf UC Davis}\hfill Spring 2021\\\\
+\begin{workdesc}
+ECS132: Probabilistic and Statistical Modeling in Computer Science. Graded assignments and exams, held office hours, gave one-on-one student help, 
+and developed course materials.
+\end{workdesc}
+
+\item[] Teaching Assistant at {\bf UC Davis} \hfill Winter 2021\\\\
+\begin{workdesc}
+GGG201B: Genomics. Provided student help and graded take-home assignments.
+\end{workdesc}
+
+\item[] Junior Specialist at {\bf UC Davis} \hfill 6/2015-10/2015\\\\
+\begin{workdesc}
+Scientific software development for the khmer project; worked on core functionality (high performance 
+C++ with CPython bindings, Python CLI), automated testing, continuous integration, packaging and distribution.
+\end{workdesc}
+
+\item[] Workshop Teaching Assistant at {\bf Marine Biological Laboratory}\hfill 8/2013\\\\
+\begin{workdesc}
+TA for the two-week intensive Strategies and Techniques for Analyzing Microbial Population Structures.
+Assisted students with hands-on bioinformatics training, developed materials, and taught portions.
+\end{workdesc}
+
+\item[] Lead Instructor at {\bf Michigan State University} \hfill Fall 2012\\\\
+\begin{workdesc}
+CSE101: Primary instructional interface for three sections of 30 undergraduates each; 
+delivered lecture, graded assignments and exams, held office hours and study sessions.
+\end{workdesc}
+
+\item[] Teaching Assistant (TA) at {\bf Alma College}\hfill 2011-2012\\\\
+\begin{workdesc}
+Intro to Computer Science. Assisted students during programming laboratory sessions.
+\end{workdesc}
+
+\end{list1}
+
+
+%____________________________________________________________________________________
+% Publications
 
 
 \section{\mysidestyle Manuscripts}
@@ -85,71 +134,50 @@ Aleksic, J., Alexa, A., Attwood, T. K., Hong, N. C., Dahlö, M., Davey, R., ...,
 
 \pagebreak
 
-\section{\mysidestyle Blogs and social media}
+%____________________________________________________________________________________
+% Honours and Awards
+\section{\mysidestyle Honors and\\Awards} 
 
-Blog: \href{http://camillescott.org}{camillescott.org}  
+USDA / MSU /  National Needs Fellow \hfill 2013-2015\\
+Binghamton University / Research Experience for Undergrads \hfill 2011\\
+Alma College / Distinguished Scholar Award \hfill 2008-2012\\
 
-Twitter: \href{http://twitter.com/camille\_codon}{@camille\_codon}
-
-GitHub: \href{https://github.com/camillescott}{github.com/camillescott}
-
-
-   %____________________________________________________________________________________
-    \section{\mysidestyle Professional\\Activities}
+%____________________________________________________________________________________
+\section{\mysidestyle Professional\\Activities}
 
 \begin{list1}
-\item[] Teaching Assistant (TA) at {\bf Alma College},\\
-{\em Intro to Computer Science} \hfill 2011-2012\\
-
-\item[] Co-founder, {\bf Alma College Association for Computing Machinery} \hfill 2012\\
-
-\item[] Lead Instructor/TA at {\bf Michigan State University},\\
-{\em CSE 101} \hfill Fall 2012\\
-
-\item[] Presenter at {\bf Michigan State University},\\
-{\em Summer Research Opportunities (SROP) Workshop} \hfill 5/2013\\
-
-\item[] TA for workshop at {\bf Marine Biological Laboratory}, \\
-{\em Strategies and Techniques for Analyzing Microbial Population Structures} \hfill 8/2013\\
-
-\item[] TA for workshop at {\bf California Institute of Technology}, \\
-{\em Workshop on Microbial Bioinformatics}  \hfill 10/2013\\
-
-\item[] TA for SROP Workshop at {\bf Michigan State University}, \\
-{\em Statistics Bootcamp} \hfill 05/2014\\
-
-\item[] Participant in Workshop at {\bf The Genome Analysis Center (TGAC)},\\
-{\em AllBio Open Science \& Reproducibility Best Practices Workshop} \hfill 09/2014\\
+\item[] Lead Instructor for workshop at {\bf UC Davis},\\
+{\em \href{https://angus.readthedocs.io/en/2017/}{ANGUS: Next-Gen Sequence Analysis Workshop}} \hfill Summer 2017\\
 
 \item[] Participant in Workshop at {\bf University of California Davis},\\
 {\em Software Carpentry ``Train the Trainers" } \hfill 01/2015\\
 
-\item[] Lead Instructor for workshop at {\bf UC Davis},\\
-{\em \href{https://angus.readthedocs.io/en/2017/}{ANGUS: Next-Gen Sequence Analysis Workshop}} \hfill Summer 2017\\
+\item[] Participant in Workshop at {\bf The Genome Analysis Center (TGAC)},\\
+{\em AllBio Open Science \& Reproducibility Best Practices Workshop} \hfill 09/2014\\
 
-\item[] TA at {\bf UC Davis},\\
-{\em ECS132: Probabilistic and Statistical Modeling in Computer Science} \hfill Spring 2021\\
+\item[] TA for SROP Workshop at {\bf Michigan State University}, \\
+{\em Statistics Bootcamp with the Summer Research Opportunities Program} \hfill 05/2014\\
+
+\item[] Presenter at {\bf Michigan State University},\\
+{\em Summer Research Opportunities (SROP) Workshop} \hfill 5/2013\\
+
+\item[] Workshop TA at {\bf California Institute of Technology},\\
+\em{Workshop on Microbial Bioinformatics} \hfill 10/2013\\
+
+\item[] Co-founder, {\bf Alma College Association for Computing Machinery} \hfill 2012\\
+
 
 \end{list1}
 
-\pagebreak
 
    %____________________________________________________________________________________
     \section{\mysidestyle Software}
 
 \begin{list1}
 
-\item[] Contributor to {\bf khmer Protocols Project},\\
-{\em Protocols for cloud-based de novo RNA-seq and metagenomic analyses}\\
-\hfill \href{https://khmer-protocols.readthedocs.org/}{khmer-protocols.readthedocs.org}\\
-
-\item[] Contributor to open source {\bf khmer software package},\\ 
-{\em k-mer counting, graph traversal, and sequence processing}\\
-\hfill \href{https://github.com/ged-lab/khmer/}{github.com/dib-lab/khmer}\\
-
-\item[] Member of and contributor to {\bf bioconda channel},\\
-{\em conda channel for bioinformatics packages for Linux and MacOS}\\
-\hfill \href{https://github.com/bioconda/bioconda-recipes}{github.com/bioconda/bioconda-recipes}\\
+\item[] Author and maintainer of {\bf cheeto},\\
+{\em Python library and CLI tools for HPC management}\\
+\hfill \href{https://github.com/ucdavis/cheeto}{github.com/ucdavis/cheeto}\\
 
 \item[] Author and maintainer of {\bf goetia},\\
 {\em C++ and Python library and command line tools for streaming sequence analysis}\\
@@ -167,10 +195,30 @@ GitHub: \href{https://github.com/camillescott}{github.com/camillescott}
 {\em an implementation of conditional reciprocal best hits with Python and LAST}\\
 \hfill \href{https://github.com/camillescott/shmlast}{github.com/camillescott/shmnlast}\\
 
+\item[] Contributor to {\bf khmer Protocols Project},\\
+{\em Protocols for cloud-based de novo RNA-seq and metagenomic analyses}\\
+\hfill \href{https://khmer-protocols.readthedocs.org/}{khmer-protocols.readthedocs.org}\\
+
+\item[] Contributor to open source {\bf khmer software package},\\ 
+{\em k-mer counting, graph traversal, and sequence processing}\\
+\hfill \href{https://github.com/ged-lab/khmer/}{github.com/dib-lab/khmer}\\
+
+\item[] Member of and contributor to {\bf bioconda channel},\\
+{\em conda channel for bioinformatics packages for Linux and MacOS}\\
+\hfill \href{https://github.com/bioconda/bioconda-recipes}{github.com/bioconda/bioconda-recipes}\\
+
+
+
 \end{list1}
 %________________________________________________________________________________________
 
 % \newpage
+
+\section{\mysidestyle Blogs and social media}
+
+GitHub: \href{https://github.com/camillescott}{github.com/camillescott}, \href{https://github.com/camillescottatwork}{github.com/camillescottatwork}
+
+Blog: \href{http://camillescott.org}{camillescott.org}  
 
 \section{\mysidestyle References}
 

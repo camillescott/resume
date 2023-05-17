@@ -194,7 +194,7 @@
 \DeclareOption{line}{\@linetrue}
 \DeclareOption{centered}{\@linefalse}
 
-\DeclareOption{margin}{\@margintrue}
+\DeclareOption{resmargin}{\@margintrue}
 \DeclareOption{overlapped}{\@marginfalse}
 
 \ExecuteOptions{overlapped,centered}
@@ -818,7 +818,7 @@
 \itemsep=0cm
 \parsep=0cm
 \topmargin -5mm
-\textheight 265mm
+\textheight 245mm
 
 \newenvironment{list1}{
   \begin{list}{\ding{113}}{%
@@ -841,3 +841,8 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\newenvironment{workdesc}
+  {\begin{minipage}{12cm}
+   \leftskip=0.5cm
+   \itshape}
+  {\end{minipage}\\}
